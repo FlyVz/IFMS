@@ -1,9 +1,9 @@
 def remover_dupli(lista):
-    lista_sem_duplicados = []
+    semDuplicacao = []
     for numero in lista:
-        if numero not in lista_sem_duplicados:
-            lista_sem_duplicados.append(numero)
-    return lista_sem_duplicados
+        if numero not in semDuplicacao:
+            semDuplicacao.append(numero)
+    return semDuplicacao
 
 lista = list(map(int, input("Digite varios numeros inteiros separados por espaço: ").split()))
 
